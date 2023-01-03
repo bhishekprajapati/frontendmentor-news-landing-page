@@ -24,7 +24,7 @@
       </button>
     </div>
     <div class="fixed md:static top-0 right-0 translate-x-full md:translate-x-0 w-3/4 md:w-auto h-screen md:h-auto bg-light" id="offcanvas">
-      <div class="p-7">
+      <div class="p-7 lg:p-0">
         <div class="direction-rtl">
           <button class="md:hidden" type="button" id="offcanvas-close-bttn" data-toggle="!translate-x-0" data-target="#offcanvas">
             <picture class="pointer-events-none">
@@ -33,12 +33,12 @@
           </button>
         </div>
         <nav class="mt-20 md:mt-0">
-          <ul class="[&>li:not(:last-child)]:mb-5 md:[&>li:not(:last-child)]:!mb-0 md:flex md:gap-x-5 lg:gap-x-10 text-blue-darker md:text-grayish-blue-dark">
-            <li><a href="#" class="text-lg">Home</a></li>
-            <li><a href="#" class="text-lg">New</a></li>
-            <li><a href="#" class="text-lg">Popular</a></li>
-            <li><a href="#" class="text-lg">Trending</a></li>
-            <li><a href="#" class="text-lg">Categories</a></li>
+          <ul class="[&>li]:px-3 [&>li:not(:last-child)]:mb-5 md:[&>li:not(:last-child)]:!mb-0 md:flex md:gap-x-3 text-blue-darker md:text-grayish-blue-dark">
+            <li><a href="#" class="text-[1rem] font-bold text-blue-darker hover:font-bold hover:text-blue-darker transition-colors duration-500">Home</a></li>
+            <li><a href="#" class="text-[1rem] hover:font-bold hover:text-blue-darker transition-colors duration-500">New</a></li>
+            <li><a href="#" class="text-[1rem] hover:font-bold hover:text-blue-darker transition-colors duration-500">Popular</a></li>
+            <li><a href="#" class="text-[1rem] hover:font-bold hover:text-blue-darker transition-colors duration-500">Trending</a></li>
+            <li><a href="#" class="text-[1rem] hover:font-bold hover:text-blue-darker transition-colors duration-500">Categories</a></li>
           </ul>
         </nav>
       </div>
@@ -75,7 +75,7 @@
             <h2 class="font-bold text-[2.5rem] text-orange-lighter">New</h2>
           </header>
           <ul class="[&>li:not(:last-child)]:border-b">
-            <li class="py-5 border-[#5F5F79]">
+            <li class="py-6 border-[#5F5F79]">
               <article>
                 <header class="mb-4">
                   <h2 class="text-xl font-bold text-light">
@@ -87,7 +87,7 @@
                 </p>
               </article>
             </li>
-            <li class="py-5 border-[#5F5F79]">
+            <li class="py-6 border-[#5F5F79]">
               <article>
                 <header>
                   <h2 class="text-xl font-bold text-light">
@@ -99,7 +99,7 @@
                 </p>
               </article>
             </li>
-            <li class="py-5 border-[#5F5F79]">
+            <li class="py-6 border-[#5F5F79]">
               <article>
                 <header>
                   <h2 class="text-xl font-bold text-light">
@@ -115,24 +115,58 @@
         </section>
       </div>
     </div>
+
+    <ul class="py-20 [&>li]:max-h-32 [&>li:not(:last-child)]:mb-5 lg:[&>li:not(:last-child)]:!mb-0 lg:flex lg:gap-x-5">
+      <li>
+        <article class="flex gap-x-5 h-full">
+          <picture class="w-4/12 h-full overflow-hidden">
+            <img class="object-cover w-full h-full" src="./assets/images/image-retro-pcs.jpg" alt="">
+          </picture>
+          <header class="w-8/12">
+            <span class="news-counter"></span>
+            <h3 class="font-bold mb-4">
+              <a href="#">Reviving Retro PCs</a>
+            </h3>
+            <p class="text-grayish-blue-dark text-[.93rem]">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </header>
+        </article>
+      </li>
+      <li>
+        <article class="flex gap-x-5 h-full">
+          <picture class="w-4/12 h-full overflow-hidden">
+            <img class="object-cover w-full h-full" src="./assets/images/image-top-laptops.jpg" alt="">
+          </picture>
+          <header class="w-8/12">
+            <span class="news-counter"></span>
+            <h3 class="font-bold mb-4">
+              <a href="#">Top 10 Laptops of 2022</a>
+            </h3>
+            <p class="text-grayish-blue-dark text-[.93rem]">
+              Our best picks for various needs and budgets.
+            </p>
+          </header>
+        </article>
+      </li>
+      <li>
+        <article class="flex gap-x-5 h-full">
+          <picture class="w-4/12 h-full overflow-hidden">
+            <img class="object-cover w-full h-full" src="./assets/images/image-gaming-growth.jpg" alt="">
+          </picture>
+          <header class="w-8/12">
+            <span class="news-counter"></span>
+            <h3 class="font-bold mb-4">
+              <a href="#">The Growth of Gaming</a>
+            </h3>
+            <p class="text-grayish-blue-dark text-[.93rem]">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </header>
+        </article>
+      </li>
+    </ul>
   </main>
-  New 
-
-
-
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-
-<script src="./main.js" type="module"></script>
+  <script src="./main.js" type="module"></script>
   </body>
 </html>

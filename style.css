@@ -10,4 +10,14 @@
     .direction-rtl {
         direction: rtl;
     }
+
+    main {
+        counter-reset: latest-news-counter 0;
+    }
+
+    .news-counter::before {
+        counter-increment: latest-news-counter;
+        content: "0" counter(latest-news-counter);
+        @apply font-bold text-grayish-blue text-3xl;
+    }
 }
