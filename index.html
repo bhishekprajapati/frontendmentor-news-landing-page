@@ -10,13 +10,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | News homepage</title>
 </head>
-<body>
+<body class="px-5 md:px-[6%] lg:px-[11.45%]">
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <header class="py-6 lg:py-[6.5%] md:flex justify-between items-center">
+    <div class="flex justify-between md:block">
+      <picture>
+        <img src="./assets/images/logo.svg" alt="site-logo">
+      </picture>
+      <button class="md:hidden" type="button" data-toggle="!translate-x-0" data-animation-classname="slide-transition" data-target="#offcanvas" id="offcanvas-menu-toggler">
+        <picture class="pointer-events-none">
+          <img src="./assets/images/icon-menu.svg" alt="menu-icon">
+        </picture>
+      </button>
+    </div>
+    <div class="fixed md:static top-0 right-0 translate-x-full md:translate-x-0 w-3/4 md:w-auto h-screen md:h-auto bg-light" id="offcanvas">
+      <div class="p-7">
+        <div class="direction-rtl">
+          <button class="md:hidden" type="button" id="offcanvas-close-bttn" data-toggle="!translate-x-0" data-target="#offcanvas">
+            <picture class="pointer-events-none">
+              <img src="./assets/images/icon-menu-close.svg" alt="menu-icon">
+            </picture>  
+          </button>
+        </div>
+        <nav class="mt-20 md:mt-0">
+          <ul class="[&>li:not(:last-child)]:mb-5 md:flex md:gap-x-5 lg:gap-x-10 text-blue-darker md:text-grayish-blue-dark">
+            <li><a href="#" class="text-lg">Home</a></li>
+            <li><a href="#" class="text-lg">New</a></li>
+            <li><a href="#" class="text-lg">Popular</a></li>
+            <li><a href="#" class="text-lg">Trending</a></li>
+            <li><a href="#" class="text-lg">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
   The Bright Future of Web 3.0?
 
@@ -47,5 +74,7 @@
   03
   The Growth of Gaming
   How the pandemic has sparked fresh opportunities.
+
+<script src="./main.js" type="module"></script>
   </body>
 </html>

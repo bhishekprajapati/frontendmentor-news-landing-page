@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .slide-transition {
+        @apply transition-transform duration-300;
+    }
+
+    .direction-rtl {
+        direction: rtl;
+    }
+}
